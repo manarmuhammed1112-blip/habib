@@ -50,6 +50,7 @@
     object-fit: cover;
     margin: 18px auto 14px;
     border-radius: 28px;
+    border: 2px solid #e7b52c;
     box-shadow: 0 15px 50px rgba(0,0,0,.35);
   }
   .links {
@@ -99,7 +100,7 @@
     font-size: 13px;
   }
 
-  /* Control Display for Pages */
+  /* التحكم في إظهار وإخفاء الصفحات */
   .prices-page, .package-page {
     display: none;
     width: min(680px, 100%);
@@ -154,7 +155,7 @@
   .package-text small { display:block; margin-top:5px; font-size:17px; color:#f5bd2e; font-weight:900; }
   .arrow { color:#f5bd2e; font-size:25px; }
 
-  /* Package Page Detail Styles */
+  /* تنسيق صفحة الباقات التفصيلية */
   .package-detail {
     background:linear-gradient(180deg,#0b213e,#051326);
     border:1px solid #e7b52c; border-radius:24px; padding:24px 20px;
@@ -176,11 +177,11 @@
   <header class="hero">
     <h1><a href="https://www.facebook.com/habibmedia.ad" target="_blank" rel="noopener">حبيب ميديا للدعاية والإعلان</a></h1>
     <p>Creative Marketing Agency</p>
-    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" alt="حبيب ميديا">
+    <!-- تم تغيير مصدر الصورة باللوجو الخاص بك -->
+    <img class="logo" src="logo.png" alt="حبيب ميديا">
   </header>
 
   <div class="links">
-    <!-- زر الأسعار والباقات -->
     <button class="btn price" onclick="openPrices()">
       <span class="icon">💰</span> قائمة الأسعار والباقات
     </button>
@@ -252,7 +253,6 @@
 </div>
 
 <script>
-  // بيانات الباقات
   const packagesData = {
     basic: {
       title: "الباقة الأساسية",
@@ -294,9 +294,8 @@
     }
   };
 
-  const phoneNum = "201000000000"; // ضعي رقم الواتساب الخاص بكِ هنا
+  const phoneNum = "201000000000"; 
 
-  // وظائف التحويل بين الصفحات
   function openPrices() {
     document.body.classList.add('prices-open');
     document.body.classList.remove('package-open');
