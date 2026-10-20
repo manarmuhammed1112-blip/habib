@@ -364,7 +364,7 @@ function showHome() {
 function showPackage(key) {
   const p = packages[key];
   document.getElementById('packageContent').innerHTML = `
-${p.old ? `<div class="old">${p.old}</div>` : ''}
+<div class="old">${p.old}</div>
       <h2>${p.title}</h2>
       <div class="price">${p.price}</div>
       <div class="old">${p.old}</div>
