@@ -299,20 +299,25 @@
   </div>
 
   <div class="package-list">
-    <button class="package-btn" onclick="showPackage('basic')">
+       <button class="package-btn" onclick="showPackage('starter')">
       <span class="medal">🥇</span>
+      <span class="package-text"><strong>الباقة الابتدائية</strong><small>2000 جنيه</small></span>
+      <span class="arrow">←</span>
+       </button>
+    <button class="package-btn" onclick="showPackage('basic')">
+      <span class="medal">🥈</span>
       <span class="package-text"><strong>الباقة الأساسية</strong><small>3000 جنيه</small></span>
       <span class="arrow">←</span>
     </button>
 
     <button class="package-btn" onclick="showPackage('medium')">
-      <span class="medal">🥈</span>
+      <span class="medal">🥉</span>
       <span class="package-text"><strong>الباقة المتوسطة</strong><small>4000 جنيه</small></span>
       <span class="arrow">←</span>
     </button>
 
     <button class="package-btn" onclick="showPackage('advanced')">
-      <span class="medal">🥉</span>
+      <span class="medal">🏅</span>
       <span class="package-text"><strong>الباقة المتقدمة</strong><small>5000 جنيه</small></span>
       <span class="arrow">←</span>
     </button>
@@ -326,6 +331,11 @@
 
 <script>
 const packages = {
+starter: {
+    title: "الباقة الابتدائية",
+    price: "2000 جنيه",
+    items: ["8 تصاميم سوشيال ميديا", "2 فيديو", "700ج إعلانات مموله", "كتابة المحتوى", "إدارة الصفحة"]
+  },
   basic: {
     title: "الباقة الأساسية",
     price: "3000 جنيه",
